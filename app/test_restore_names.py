@@ -1,10 +1,5 @@
-import os
-import sys
-
-# Ensure Python can find main.py inside the app directory
-sys.path.insert(0, os.path.dirname(__file__))
-
-from main import restore_names  # noqa: E402
+import pytest
+from app.restore_names import restore_names
 
 
 def test_restore_names_when_first_name_is_none() -> None:
